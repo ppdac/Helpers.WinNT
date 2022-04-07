@@ -4,15 +4,17 @@ namespace Helpers.WinNT
 {
     public class KernelNames
     {
-        public enum KernelName { 
-            Vista = 0,
+        public enum KernelName
+        {
+            WinUnkown = -1,
+            Vista,
             Windows7 = 7,
             Windows8 = 8,
             Windows10 = 10,
             Windows11 = 11,
             Windows = Windows10 | Windows11,
-            WinUnkown,
-            WinOutdated = 5
+            //WinUnkown, #Roslyn increments up one making this 12. Final position would be 6.
+            WinOutdated = 5,
         };
         
         public static KernelName GetWindowsNTVersion()
