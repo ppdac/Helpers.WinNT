@@ -8,7 +8,7 @@ namespace Helpers.WinNT
         {
             WinUnknown = -1
             WinOutdated = -1,
-            Unsupported = WinUnknown | WinOutdated
+            Unsupported = WinUnknown | WinOutdated,
             Vista = 0,
             Windows7 = 7,
             Windows8 = 8,
