@@ -23,17 +23,17 @@ namespace Helpers.WinNT
 
             if (NTx.Contains("Unix"))
                 return KernelName.Unsupported;
-            else if (NTx.Contains("10.0."))
+            else if (NTx.Contains("NT 10.0."))
                 return KernelName.Windows;
-            else if (NTx.Contains("6.3.") || NTx.Contains("6.2."))
+            else if (NTx.Contains("NT 6.3.") || NTx.Contains("NT 6.2."))
                 return KernelName.Windows8;
-            else if (NTx.Contains("6.1."))
+            else if (NTx.Contains("NT 6.1."))
                 return KernelName.Windows7;
-            else if (NTx.Contains("6.0."))
+            else if (NTx.Contains("NT 6.0."))
                 return KernelName.Vista;
-            else if (NTx.Contains("5.2.") || NTx.Contains("5.1.") || NTx.Contains("5.0."))
+            else if (NTx.Contains("NT 5.2.") || NTx.Contains("NT 5.1.") || NTx.Contains("NT 5.0."))
                 return KernelName.WinOutdated;
-
+            
             return KernelName.WinUnknown;
         }
     }
