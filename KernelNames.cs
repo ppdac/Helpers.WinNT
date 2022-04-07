@@ -4,7 +4,17 @@ namespace Helpers.WinNT
 {
     public class KernelNames
     {
-        public enum KernelName { Vista, Windows7, Windows8, Windows, WinUnkown, WinOutdated };
+        public enum KernelName { 
+            Vista = 0,
+            Windows7 = 7,
+            Windows8 = 8,
+            Windows10 = 10,
+            Windows11 = 11,
+            Windows = Windows10 | Windows11,
+            WinUnkown,
+            WinOutdated = 5
+        };
+        
         public static KernelName GetWindowsNTVersion()
         {
             string NTx = Environment.OSVersion.ToString();
