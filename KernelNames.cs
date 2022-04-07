@@ -9,7 +9,7 @@ namespace Helpers.WinNT
         {
             string NTx = Environment.OSVersion.ToString();
 
-            if (Ntx.Contains("10.0"))
+            if (NTx.Contains("10.0"))
                 return KernelName.Windows;
             if (NTx.Contains("6.3.") || NTx.Contains("6.2."))
                 return KernelName.Windows8;
