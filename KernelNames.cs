@@ -23,7 +23,7 @@ namespace Helpers.WinNT
 
             if (NTx.Contains("10.0"))
                 return KernelName.Windows;
-            if (NTx.Contains("6.3.") || NTx.Contains("6.2."))
+            else if (NTx.Contains("6.3.") || NTx.Contains("6.2."))
                 return KernelName.Windows8;
             else if (NTx.Contains("6.1."))
                 return KernelName.Windows7;
